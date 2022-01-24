@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var punto_1 = require("./punto");
+var triangulo_1 = require("./triangulo");
+var punto1 = new punto_1.Punto(5, 6);
+console.log(punto1.getX());
+console.log(punto1.getY());
+punto1.toString();
+var punto2 = new punto_1.Punto(0, 4);
+console.log(punto1.calcularDistancia(punto2));
+console.log(punto1.distanciaAlOrigen());
+console.log(punto1.calcularCuadrante());
+var punto3 = new punto_1.Punto(4, 2);
+var triangulo = new triangulo_1.Triangulo(punto1, punto2, punto3);
+console.log(triangulo.calcularLongitudLados());
